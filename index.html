@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
@@ -12,8 +13,26 @@
     <form id="create-task-form" action="" method="POST">
       <label for="new-task-description">Task description:</label>
       <input type="text" id="new-task-description" name="new-task-description" placeholder="description">
+      
+      <label for="task-user">Assigned to: </label>
+      <input type="text"  id="task-user" name="task-user" placeholder="user">
+
+      <label for="task-due-date" >Due Date:</label> 
+      <input type="date" id="task-due-date" name="task-due-date">
+
+      <label for="task-priority"> priority:</label>
+      <select id="task-priority">
+        <option value="high">High</option>
+        <option value="medium">Medium</option>
+        <option value="low">Low</option>
+      </select>
+
+
       <input type="submit" value="Create New Task">
     </form>
+
+
+    <button id="sort-taks">sort by priority</button>
 
     <div id="list">
       <h2>My Todos:</h2>
